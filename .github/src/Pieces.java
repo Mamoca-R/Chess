@@ -1,3 +1,4 @@
 public interface Pieces {
-    void move(String input);
+    void move(int x_coord, int y_coord);
+    void kill();
 }
