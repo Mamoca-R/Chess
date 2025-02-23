@@ -1,4 +1,4 @@
-# Chess Engine
+# Chess Engine (In-Progress)
 
 A fully functional chess engine built from scratch, designed to be integrated into a personal website. This project is focused on providing an engaging, interactive chess-playing experience while exploring core software engineering principles, game logic, and AI development.
 
@@ -28,7 +28,7 @@ Steps
 
 Clone the repository:
 
-git clone https://github.com/yourusername/chess-engine.git
+git clone https://github.com/Mamoca-R/chess.git
 cd chess-engine
 
 Install dependencies:
