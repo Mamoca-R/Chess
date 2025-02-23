@@ -2,7 +2,7 @@
 
 A fully functional chess engine built from scratch, designed to be integrated into a personal website. This project is focused on providing an engaging, interactive chess-playing experience while exploring core software engineering principles, game logic, and AI development.
 
-🚀 Features
+# Features
 
 Full chess rules implementation (legal moves, check, checkmate, stalemate)
 
@@ -16,7 +16,7 @@ Support for two-player mode (local play)
 
 Game history tracking and undo functionality
 
-📦 Installation
+# Installation
 
 Prerequisites
 
@@ -69,7 +69,7 @@ chess-engine/
 
 
 
-🤝 Contributing
+# Contributing
 
 Contributions are welcome! Here's how you can help:
 
@@ -81,11 +81,11 @@ Push to the branch (git push origin feature/your-feature)
 
 Open a pull request
 
-📝 License
+# License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-🙏 Acknowledgments
+# Acknowledgments
 
 Chess Programming Wiki for algorithm references
 
