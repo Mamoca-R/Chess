@@ -41,7 +41,7 @@ npm start
 
 Open your browser and go to http://localhost:3000 to play.
 
-🎮 Usage
+# Usage
 
 Once the server is running:
 
@@ -51,7 +51,7 @@ Play against a friend locally or challenge the AI (when available).
 
 Use the undo button to revert the last move.
 
-⚙️ Project Structure
+# Project Structure
 
 chess-engine/
 │
@@ -65,7 +65,7 @@ chess-engine/
 ├── package.json     # Project configuration
 └── README.md        # This file
 
-🛠️ Development Roadmap
+# Development Roadmap
 
 
 
