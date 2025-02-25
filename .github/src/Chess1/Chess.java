@@ -1,9 +1,10 @@
+package Chess1;
+
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Image;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
@@ -152,7 +153,7 @@ public class Chess {
     }
 
     public static Image[] extractImages() throws IOException {
-        BufferedImage all = ImageIO.read(new File("C:\\Users\\joshu\\IdeaProjects\\Chess\\.github\\src\\chess.png"));
+        BufferedImage all = ImageIO.read(new File("C:\\Users\\joshu\\IdeaProjects\\Chess\\.github\\src\\Chess1\\chess.png"));
         Image[] images = new Image[12];
         int index = 0;
         for (int y = 0; y < 400; y += 200) {
