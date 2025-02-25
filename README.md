@@ -51,36 +51,6 @@ Play against a friend locally or challenge the AI (when available).
 
 Use the undo button to revert the last move.
 
-# Project Structure
-
-chess-engine/
-│
-├── public/          # Static files
-├── src/
-│   ├── components/  # React components (Board, Piece, UI elements)
-│   ├── engine/      # Core chess logic and AI
-│   ├── styles/      # CSS and styling files
-│   ├── App.js       # Main application entry
-│   └── index.js     # Entry point for React
-├── package.json     # Project configuration
-└── README.md        # This file
-
-# Development Roadmap
-
-
-
-# Contributing
-
-Contributions are welcome! Here's how you can help:
-
-Fork the repo and create your branch (git checkout -b feature/your-feature)
-
-Commit your changes (git commit -am 'Add some feature')
-
-Push to the branch (git push origin feature/your-feature)
-
-Open a pull request
-
 # License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
