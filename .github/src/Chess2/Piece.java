@@ -4,12 +4,12 @@ import java.awt.Image;
 import java.util.List;
 
 public abstract class Piece {
-    protected boolean isWhite;
-    protected int row;
-    protected int file;
-    protected int x;
-    protected int y;
-    protected Image img;
+    protected boolean isWhite; // true if white, false if black
+    protected int row; // row on board (1-8)
+    protected int file; // file on board (1-8)
+    protected int x; // x coordinate on screen (0-512)
+    protected int y; // y coordinate on screen (0-512)
+    protected Image img; // image of piece
 
     /*
     Piece constructor
@@ -35,12 +35,17 @@ public abstract class Piece {
     public Image getImage() {
         return img;
     }
+    /*
+    Get logical row i and file j for pieces[i][j]
+     */
     public int getLogicalRow() {
         return 8 - row;
     }
     public int getLogicalFile() {
         return file - 1;
     }
+
+    
 
     public int getX() {
         return this.x;
@@ -77,7 +82,12 @@ public abstract class Piece {
 
 
     /*
-        Print legal moves for pawn
+        Print legal moves for piece, where each instance is [file, row]
          */
     public abstract List<int[]> getLegalMoves(Piece[][] board);
+
+    // Helper function to ensure moves stay within board limits
+    public boolean isWithinBounds(int file, int row) {
+        return file >= 1 && file <= 8 && row >= 1 && row <= 8;
+    }
 }

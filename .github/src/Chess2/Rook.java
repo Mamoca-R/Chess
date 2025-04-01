@@ -4,24 +4,23 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Bishop extends Piece {
-    public Bishop(boolean isWhite, int file, int row, Image img) {
+public class Rook extends Piece {
+
+
+    public Rook(boolean isWhite, int file, int row, Image img) {
         super(isWhite, file, row, img);
     }
 
-    /*
-    Get legal moves for bishop
-     */
     @Override
     public List<int[]> getLegalMoves(Piece[][] board) {
         List<int[]> legalMoves = new ArrayList<>();
         
         // Define all possible directions: horizontal, vertical, and diagonal
         int[][] directions = {
-            {-1, 1}, // up-left
-            {1, 1},  // up-right
-            {-1, -1},  // down-left
-            {1, -1}    // down-right
+            {-1, 0},  // left
+            {1, 0},   // right
+            {0, 1},  // up
+            {0, -1},   // down
         };
         
         // Check each direction
@@ -58,15 +57,6 @@ public class Bishop extends Piece {
         return legalMoves;
     }
 
-    /*
-            Move function for bishop
-             */
-    public static void move() {}
+   
 
-    /*
-    Print legal moves for bishop
-     */
-    public static int[][] legalMoves() {
-        return null;
-    }
 }

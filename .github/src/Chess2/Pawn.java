@@ -25,7 +25,7 @@ public class Pawn extends Piece {
         //region White Pawn moves
         if (this.isWhite) {
             // Forward move by 1
-            if (isWithinBounds(file, row + 1) && board[file][row + 1] == null) {
+            if (isWithinBounds(this.file, this.row + 1) && board[file][row + 1] == null) {
                 moves.add(new int[]{file, row + 1});
 
                 // Forward move by 2 from starting row
@@ -35,11 +35,11 @@ public class Pawn extends Piece {
             }
 
             // Capture moves
-            if (isWithinBounds(file - 1, row + 1) && board[file - 1][row + 1] != null &&
+            if (isWithinBounds(this.file - 1, this.row + 1) && board[file - 1][row + 1] != null &&
                     !board[file - 1][row + 1].isWhite) {
                 moves.add(new int[]{file - 1, row + 1});
             }
-            if (isWithinBounds(file + 1, row + 1) && board[file + 1][row + 1] != null &&
+            if (isWithinBounds(this.file + 1, this.row + 1) && board[file + 1][row + 1] != null &&
                     !board[file + 1][row + 1].isWhite) {
                 moves.add(new int[]{file + 1, row + 1});
             }
@@ -48,7 +48,7 @@ public class Pawn extends Piece {
         //region Black Pawn moves
         if (!this.isWhite) {
             // Forward move by 1
-            if (isWithinBounds(file, row - 1) && board[file][row - 1] == null) {
+            if (isWithinBounds(this.file, this.row - 1) && board[file][row - 1] == null) {
                 moves.add(new int[]{file, row - 1});
 
                 // Forward move by 2 from starting row
@@ -58,26 +58,23 @@ public class Pawn extends Piece {
             }
 
             // Capture moves
-            if (isWithinBounds(file - 1, row - 1) && board[file - 1][row - 1] != null &&
+            if (isWithinBounds(this.file - 1, this.row - 1) && board[file - 1][row - 1] != null &&
                     board[file - 1][row - 1].isWhite) {
                 moves.add(new int[]{file - 1, row - 1});
             }
-            if (isWithinBounds(file + 1, row - 1) && board[file + 1][row - 1] != null &&
+            if (isWithinBounds(this.file + 1, this.row - 1) && board[file + 1][row - 1] != null &&
                     board[file + 1][row - 1].isWhite) {
                 moves.add(new int[]{file + 1, row - 1});
             }
         }
         //endregion
 
-        for (int[] move : moves) {
-            System.out.println(move[0] + " " + move[1]);
-        }
+        // for (int[] move : moves) {
+        //     System.out.println(move[0] + " " + move[1]);
+        // }
 
         return moves;
     }
 
-    // Helper function to ensure moves stay within board limits
-    private boolean isWithinBounds(int file, int row) {
-        return file >= 1 && file <= 8 && row >= 1 && row <= 8;
-    }
+
 }
