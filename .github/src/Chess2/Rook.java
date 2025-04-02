@@ -25,8 +25,8 @@ public class Rook extends Piece {
         
         // Check each direction
         for (int[] direction : directions) {
-            int currentFile = file;
-            int currentRow = row;
+            int currentFile = this.file;
+            int currentRow = this.row;
             
             // Keep moving in the current direction until we hit a boundary or piece
             while (true) {

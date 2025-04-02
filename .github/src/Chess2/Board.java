@@ -157,7 +157,7 @@ public class Board {
     Extract images from chess.png
      */
     public static Image[] extractImages() throws IOException {
-        BufferedImage all = ImageIO.read(new File("C:\\Users\\joshu\\IdeaProjects\\Chess\\.github\\src\\Chess2\\chess.png"));
+        BufferedImage all = ImageIO.read(new File("C:\\Users\\joshu\\IdeaProjects\\Chess\\.github\\src\\Chess2\\GUI\\assets\\chess.png"));
         Image[] images = new Image[12];
         int index = 0;
         for (int y = 0; y < 400; y += 200) {

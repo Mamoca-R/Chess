@@ -6,7 +6,6 @@ import java.util.List;
 
 public class Knight extends Piece {
 
-
     public Knight(boolean isWhite, int file, int row, Image img) {
         super(isWhite, file, row, img);
     }
