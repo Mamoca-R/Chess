@@ -2,6 +2,10 @@
 
 A fully functional chess engine built from scratch, designed to be integrated into a personal website. This project is focused on providing an engaging, interactive chess-playing experience while exploring core software engineering principles, game logic, and AI development.
 
+# Next steps
+
+Implement with React/Vue/HTML for web frontend and Spring Boot for Java backend
+
 # Features
 
 Full chess rules implementation (legal moves, check, checkmate, stalemate)
